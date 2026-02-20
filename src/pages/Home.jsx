@@ -115,7 +115,7 @@ const Home = () => {
 
           </div>
           <div className="mt-15 flex gap-4">
-            <a href="contact" className="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700">Contact Me</a>
+            <a href="tel:+916204979918" className="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700">Contact Me</a>
             <a href="mailto:ankurkumar62049@gmail.com" className="px-6 py-3 border border-gray-200 rounded-full hover:bg-gray-100">Send Email</a>
           </div>
 
