@@ -88,12 +88,14 @@ export default function App() {
       img: "/logos/RideXperts.jpg",
       link: "",
     },
+    
   ];
  const certification = [
+ 
     {
-      title: "IEEE Hackathon Finalist ",
-      subtitle: "MIT-ADT University 2025",
-      img: "/certification/IEEE.jpg",
+      title: "Enhancing Soft Skill and Dev",
+      subtitle: "IIT Kanpur 2023",
+      img: "/certification/ESSD.jpg",
       link: "",
     },
     {
@@ -102,18 +104,34 @@ export default function App() {
       img: "/certification/IOT.jpg",
       link: "",
     },
-    {
-      title: "Enhancing Soft Skill and Dev",
-      subtitle: "IIT Kanpur 2023",
-      img: "/certification/ESSD.jpg",
+       {
+      title: "IEEE Hackathon Finalist ",
+      subtitle: "MIT-ADT University 2025",
+      img: "/certification/IEEE.jpg",
       link: "",
     },
-    {
+   
+     {
       title: "Data Visualization",
       subtitle: "TATA Forsage 2025",
       img: "/certification/tata.jpg",
       link: "",
     },
+     {
+      title: "Internships Offer",
+      subtitle: "InTrainZ Intership-2025",
+      img: "/certification/internship.jpg",
+      link: "",
+    },
+    
+    //  {
+    //   title: "Internships Offer",
+    //   subtitle: "Labmentix Web Developer-2025",
+    //   img: "/certification/Labmentix.jpg",
+    //   link: "",
+    // },
+
+
   ];
 
   return (
@@ -154,7 +172,7 @@ export default function App() {
            <a
   href="/myresume.pdf"
    download="myresume.pdf"
-  className="w-50 mx-4  px-4 py-2 text-xl hover:bg-violet-700 bg-white text-center justify-center"
+  className="w-50 mx-4 hover:opacity-0.4  px-4 py-2 text-xl hover:bg-violet-500 bg-white text-center justify-center"
 >
  Download Resume
 </a>
@@ -187,7 +205,9 @@ export default function App() {
         className="w-8 h-8 hover:opacity-8"
       />
     </a>
-  </div>
+
+    
+  </div> 
           <div className="mt-28 flex gap-4">
             <a href="#contact" className="px-6 py-3 bg-indigo-600 text-white rounded-full hover:bg-indigo-700">Contact Me</a>
             <a href="mailto:ankurkumar62049@gmail.com" className="px-6 py-3 border border-gray-200 rounded-full hover:bg-gray-100">Send Email</a>
@@ -197,9 +217,9 @@ export default function App() {
         </div>
 
         <div className="flex justify-end items-center w-full md:w-1/2 mt-0">
-  <div className="w-124 h-104 rounded-2xl shadow-md overflow-hidden">
+  <div className="w-124 h-170 rounded-full shadow-md overflow-hidden md-170 ">
     <img
-      src="https://img.freepik.com/free-vector/hand-drawn-web-developers_23-2148819604.jpg?semt=ais_hybrid&w=740&q=80"
+      src="/logos/mypic.jpg"
       alt="profile"
       className="w-full h-full object-cover rounded-2xl"
     />
@@ -295,9 +315,9 @@ export default function App() {
 
 <section
       id="certification"
-      className="container mx-auto  bg-gray-800 rounded-lg shadow-sm py-40 mt-10"
+      className="container mx-auto  bg-gray-800 rounded-lg shadow-sm py-40 mt-12"
     >
-      <h2 className="text-5xl font-bold text-center text-white">Certification</h2>
+      <h2 className="text-5xl font-bold text-center text-white">Certification & Internships</h2>
       <p className="mt-2 text-blue-600 text-3xl font-bold px-6">What I Earn</p>
 
       <div className="mt-5 grid sm:grid-cols-2 md:grid-cols-4 gap-6 px-6 text-white">
@@ -318,11 +338,11 @@ export default function App() {
               />
             </div>
             <div className="p-4 text-white">
-              <h3 className="font-semibold">{p.title}</h3>
-              <p className="text-sm text-white-600 mt-2">{p.subtitle}</p>
+              <h3 className="font-semibold mx-6">{p.title}</h3>
+              <p className="text-sm text-white-600 mt-2 mx-6">{p.subtitle}</p>
               <a
                 href={p.link}
-                className="font-bold px-6 py-4 mt-3 inline-block bg-cyan-400 text-sm rounded"
+                className="font-bold mx-6 px-6 py-4 mt-3 inline-block bg-cyan-400 text-sm rounded"
               >
                 Read more →
               </a>
@@ -347,7 +367,7 @@ export default function App() {
         <h2 className="text-5xl font-bold text-center text-white mt-30">Contact</h2>
         <p className="mt-2 text-blue-600 text-3xl font-bold">Connect with me</p>
         <p className="text-white font-normal mt-4">If you want to know more about me or my work, or if you would just
-like to say hello, send me a message. I'd love to hear from you.</p>
+        like to say hello, send me a message. I'd love to hear from you.</p>
 
         <form className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-2 max-w-40xl ">
           <input className="p-3 border rounded  bg-white" placeholder="Name" required/><br />
@@ -365,7 +385,7 @@ like to say hello, send me a message. I'd love to hear from you.</p>
   <h4 className="font-semibold mt-4 text-white">Address</h4>
   <p className="text-sm text-sky-600">Karamveer Nagar Colony, Bhopal India</p>
 
-  <h4 className="font-semibold mt-4 text-white flxt">Social Media</h4>
+  <h4 className="font-semibold mt-4 text-white flxt"> Social Media</h4>
   <div className="flex space-x-4 mt-2 justify-right">
     {/* LinkedIn */}
     <a href="https://www.linkedin.com/in/ankurkumar24h9" target="_blank" rel="noreferrer">
@@ -397,7 +417,7 @@ like to say hello, send me a message. I'd love to hear from you.</p>
      
         <footer className="mt-12 bg-black">
         <div className=" text-2xl container mx-auto px-6 text-center text-violet-600 font-bold">
-          All Right reserved by @ <span className="text-red-500"></span> by Ankur Kumar
+          All Right reserved  @ <span className="text-red-500"></span> by Ankur Kumar
         </div>
       </footer>
       </section>
